@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Error404 } from '../components/404'
 import { Main } from '../components/Main'
 import { Header } from '../layout/Header'
 
@@ -12,7 +13,8 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <Main />
+      <Error404 />
+      {/* <Main /> */}
     </div>
   )
 }
