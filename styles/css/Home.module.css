@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=Home.module.css.map */
+.header {
+  @apply text-red-200  max-w-[1920px];
+}
+/*# sourceMappingURL=Home.module.css.map */
