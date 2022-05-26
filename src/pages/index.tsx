@@ -15,8 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Error404 />
+      {/* <Button /> */}
       <div className='text-red-200' >sss</div>
-      {/* <Main /> */}
     </div>
   )
 }
