@@ -1,5 +1,10 @@
 {
-    "projects": [],
-    "styleguides": [],
-    "components": []
+  "projects": ["61cd88be30ed196c419f15eb"],
+  "styleguides": [],
+  "components": [
+    {
+        "path": "/src/stories/Button.tsx",
+        "zeplinIds": []
+    }
+  ]
 }
