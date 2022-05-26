@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types'
 
-const Button = ({ backgroundColor = 'red', size = 'md', handleClick }) => {
+const Button = ({
+  label = 'but',
+  backgroundColor = 'red',
+  size = 'md',
+  handleClick,
+}) => {
   let scale = 1
   if (size === 'sm') scale = 0.75
   if (size === 'lg') scale = 1.5
@@ -11,7 +16,7 @@ const Button = ({ backgroundColor = 'red', size = 'md', handleClick }) => {
   }
   return (
     <button onClick={handleClick} style={style}>
-      Button
+      {label}
     </button>
   )
 }

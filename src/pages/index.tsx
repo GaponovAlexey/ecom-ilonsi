@@ -1,9 +1,9 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Error404 } from '../components/404'
-import Button from '../components/Button'
-import { Main } from '../components/Main'
 import { Header } from '../layout/Header'
+import { Red } from '../stories/Button.stories'
+import { WrapOverflow } from '../stories/Stack.stories'
 
 const Home: NextPage = () => {
   return (
@@ -15,8 +15,9 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Error404 />
-      <Button />
-      <div className='text-red-200' >sss</div>
+      <Red />
+      <WrapOverflow  numberOfChildren={21} key={6} />
+      <div className='text-red-200'>sss</div>
     </div>
   )
 }
