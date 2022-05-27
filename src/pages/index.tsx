@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Error404 />
-      <WrapOverflowssss />
+      <WrapOverflowssss >clooossdd</WrapOverflowssss>
       <WrapOverflow numberOfChildren={16} />
       <div className='text-red-200'>sss</div>
     </div>

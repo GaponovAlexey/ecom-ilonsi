@@ -1,6 +1,12 @@
 import pt from 'prop-types'
 
-function Button({ label, backgroundColor = 'red', size = 'md', handleClick }) {
+function Button({
+  args,
+  children,
+  backgroundColor = 'red',
+  size = 'md',
+  handleClick,
+}) {
   let scale = 1
   if (size === 'sm') scale = 0.75
   if (size === 'lg') scale = 1.5
@@ -11,13 +17,14 @@ function Button({ label, backgroundColor = 'red', size = 'md', handleClick }) {
   }
   return (
     <button onClick={handleClick} style={style}>
-      {label}
+      {children}
     </button>
   )
 }
 
 Button.pt = {
-  label: pt.string,
+  args: pt.shape({}),
+  children: pt.string,
   backgroundColor: pt.string,
   size: pt.oneOf(['sm', 'md', 'lg']),
   handleClick: pt.func,

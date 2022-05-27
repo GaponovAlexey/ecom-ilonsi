@@ -4,17 +4,15 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 export default {
   title: 'Components/Button',
   component: Button,
-  argTypes: {
-    handleClick: { action: 'clicked' },
-    label: { defaultValue: 'Click me' },
-  },
 } as ComponentMeta<typeof Button>
 
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+const Template: ComponentStory<typeof Button> = ({args, children}) => (
+  <Button {...args}>{children}</Button>
+)
 
 //👇 Each story then reuses that template
 export const Primary = Template.bind({})
-Primary.args = { backgroundColor: '#ff0', label: 'Button' }
+Primary.args = { backgroundColor: '#ff0' }
 
 export const Silver = Template.bind({
   args: { backgroundColor: '#ccc', label: 'Buttonыыыы' },
@@ -22,12 +20,10 @@ export const Silver = Template.bind({
 
 Silver.args = {
   backgroundColor: '#fff',
-  label: 'Black',
   size: 'md',
 }
 
 export const WrapOverflowssss = Template.bind({})
 WrapOverflowssss.args = {
   ...Primary.args,
-  label: 'Primary with a really long name',
 }
