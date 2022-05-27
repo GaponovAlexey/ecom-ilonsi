@@ -50,7 +50,7 @@ NoSpacing.args = {
 
 export const WrapOverflow = Template.bind({})
 WrapOverflow.args = {
-  numberOfChildren: 40,
+  numberOfChildren: 5,
   direction: "row",
   spacing: 2,
   wrap: true,
