@@ -1,14 +1,16 @@
 import Button from '../components/Button'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
 
 export default {
   title: 'Components/Button',
   component: Button,
-  argTypes: { handleClick: { action: 'handleClick' } },
-}
+} as ComponentMeta<typeof Button>
 
-const Template = (args: any) => <Button {...args} />
 
-export const Red = Template.bind({}) as any
+const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />
+
+
+export const Red = Template.bind({})
 
 Red.args = {
   backgroundColor: 'red',
@@ -16,16 +18,10 @@ Red.args = {
   size: 'md',
 }
 
-export const Silver = Template.bind({}) as any
-Silver.args = {
-  backgroundColor: 'Silver',
-  label: 'Press Me',
-  size: 'md',
-}
+export const Silver = Template.bind({})
 
-export const Grey = Template.bind({}) as any
-Grey.args = {
-  backgroundColor: 'grey',
-  label: 'Press Me',
+Silver.args = {
+  backgroundColor: 'gray',
+  label: 'silver',
   size: 'md',
 }

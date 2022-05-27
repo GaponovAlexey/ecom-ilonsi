@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Error404 } from '../components/404'
 import { Header } from '../layout/Header'
-import { Red } from '../stories/Button.stories'
+import { Red, Silver } from '../stories/Button.stories'
 import { WrapOverflow } from '../stories/Stack.stories'
 
 const Home: NextPage = () => {
@@ -15,7 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <Error404 />
-      <Red />
+      {/* <Red /> */}
+      <Silver />
       <WrapOverflow  numberOfChildren={21} key={6} />
       <div className='text-red-200'>sss</div>
     </div>
