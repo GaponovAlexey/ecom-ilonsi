@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Error404 } from '../components/404'
+import { FormInput } from '../components/FormInput'
 import { Header } from '../layout/Header'
 import { Primary, Silver, WrapOverflowssss } from '../stories/Button.stories'
-import { Secondary } from '../stories/Button2.stories'
+import { Default, Secondary } from '../stories/Button2.stories'
+import { MyFormInput } from '../stories/FormInput.stories'
 import { WrapOverflow } from '../stories/Stack.stories'
 
 const Home: NextPage = () => {
@@ -15,13 +17,11 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Header />
-      <Error404 />
-
-      <Secondary />
-      <Primary  />
-      <Silver backgroundColor={'pink'} />
-      <WrapOverflow numberOfChildren={16} />
-      <div className='text-red-200'>sss</div>
+        <FormInput label='inputBase' />
+        <MyFormInput />
+      {/* <div className='Rectangle'> */}
+        {/* <p className='My-Strange-button-Stroke' >my strange stroke</p> */}
+      {/* </div> */}
     </div>
   )
 }

@@ -16,4 +16,20 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.Rectangle {
+  width: 218px;
+  height: 58px;
+  margin: 3px 0 0 2px;
+  background-color: #33eb23;
+}
+
+.My-Strange-button-Stroke {
+  width: 192.6px;
+  height: 23px;
+  padding: 1px;
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000;
+}
 /*# sourceMappingURL=globals.css.map */
