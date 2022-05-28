@@ -4,11 +4,9 @@ import { ComponentStory, ComponentMeta } from '@storybook/react'
 export default {
   title: 'Components/Button',
   component: Button,
-  argTypes: {
-    label: {
-      name: 'имя кнопки',
-    },
-  },
+  parameters: {
+    zeplinLink: "https://app.zeplin.io/project/628f8dc0791d54afc8028f58/screen/628f8e2d4fe2c9b363c35549"
+},
 } as ComponentMeta<typeof Button>
 
 const Template: ComponentStory<typeof Button> = (args) => (
@@ -16,7 +14,9 @@ const Template: ComponentStory<typeof Button> = (args) => (
 )
 
 export const Primary = Template.bind({})
-Primary.args = { backgroundColor: '#ff0' }
+Primary.parameters = {
+  zeplinLink: "zpl://screen?pid=628f8dc0791d54afc8028f58&sid=6292475b3c19091100a1f4d4"
+  }
 
 export const Silver = Template.bind({})
 Silver.args = {
