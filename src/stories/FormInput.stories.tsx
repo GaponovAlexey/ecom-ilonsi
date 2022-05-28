@@ -1,5 +1,8 @@
 import { FormInput } from '../components/FormInput'
-import { ComponentStory, ComponentMeta } from '@storybook/react'
+import {storiesOf, ComponentStory, ComponentMeta } from '@storybook/react'
+
+
+
 
 export default {
   title: 'Components/Button',
