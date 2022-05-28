@@ -1,6 +1,6 @@
 import pt from 'prop-types'
 
-function Button({ label, children, backgroundColor = 'red', size = 'md' }) {
+function Button({ label = 'Button', backgroundColor = 'red', size = 'md' }) {
   let scale = 1
   if (size === 'sm') scale = 0.75
   if (size === 'lg') scale = 1.5
