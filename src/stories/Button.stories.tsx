@@ -6,7 +6,7 @@ export default {
   component: Button,
   parameters: {
     zeplinLink:
-      'https://app.zeplin.io/project/628f8dc0791d54afc8028f58/screen/628f8e2d4fe2c9b363c35549',
+      'zpl://components?pid=62927166afb23d1511bff773&coid=6292716a1a8dbc1219fc647f',
   },
 } as ComponentMeta<typeof Button>
 
